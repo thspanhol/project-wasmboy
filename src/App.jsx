@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { WasmBoy } from "wasmboy";
-import MK from "./assets/MK.gb";
+import PR from "./assets/PR.gb";
 import "./App.css";
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
       saveStateCallback: false,
     };
     await WasmBoy.config(wasmBoyOptions, canvasRef.current);
-    await WasmBoy.loadROM(MK);
+    await WasmBoy.loadROM(PR);
     await WasmBoy.play();
   };
 
