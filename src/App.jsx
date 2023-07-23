@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <>
-      <h1>MK - Gameboy</h1>
+      <h1>PR - Gameboy</h1>
       <button onClick={setup}>Play</button>
       <canvas ref={canvasRef} className="game"></canvas>
     </>
